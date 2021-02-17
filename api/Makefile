@@ -4,7 +4,7 @@ build:
 
 .Phony: run
 run: stop build
-	docker run --name api -p 5000:5000 api /bin/bash -c "uwsgi -d --ini api.ini; nginx -g 'daemon off;'"
+	docker run --name api -p 5000:5000 api
 
 .Phony: stop
 stop:
