@@ -2,7 +2,7 @@ FROM nginx
 
 RUN apt-get update -y
 RUN apt-get install -y python3 python3-pip uwsgi
-RUN pip3 install flask flask-sqlalchemy flask-restful uwsgi
+RUN pip3 install flask flask-MongoAlchemy flask-restful uwsgi
 
 COPY flaskr flaskr
 COPY wsgi.py wsgi.py
